@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E271F78A1A22F82E00340729 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E271F7891A22F82E00340729 /* RestaurantTableViewController.swift */; };
+		E271F78C1A23892D00340729 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E271F78B1A23892D00340729 /* CustomTableViewCell.swift */; };
 		E2DB42021A21E8F4005EC592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB42011A21E8F4005EC592 /* AppDelegate.swift */; };
-		E2DB42041A21E8F4005EC592 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB42031A21E8F4005EC592 /* ViewController.swift */; };
 		E2DB42071A21E8F4005EC592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DB42051A21E8F4005EC592 /* Main.storyboard */; };
 		E2DB42091A21E8F4005EC592 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DB42081A21E8F4005EC592 /* Images.xcassets */; };
 		E2DB420C1A21E8F4005EC592 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2DB420A1A21E8F4005EC592 /* LaunchScreen.xib */; };
@@ -26,10 +27,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E271F7891A22F82E00340729 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		E271F78B1A23892D00340729 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E2DB41FC1A21E8F4005EC592 /* Food Pin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Pin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DB42001A21E8F4005EC592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2DB42011A21E8F4005EC592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2DB42031A21E8F4005EC592 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2DB42061A21E8F4005EC592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2DB42081A21E8F4005EC592 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E2DB420B1A21E8F4005EC592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -78,10 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				E2DB42011A21E8F4005EC592 /* AppDelegate.swift */,
-				E2DB42031A21E8F4005EC592 /* ViewController.swift */,
 				E2DB42051A21E8F4005EC592 /* Main.storyboard */,
 				E2DB42081A21E8F4005EC592 /* Images.xcassets */,
 				E2DB420A1A21E8F4005EC592 /* LaunchScreen.xib */,
+				E271F7891A22F82E00340729 /* RestaurantTableViewController.swift */,
+				E271F78B1A23892D00340729 /* CustomTableViewCell.swift */,
 				E2DB41FF1A21E8F4005EC592 /* Supporting Files */,
 			);
 			path = "Food Pin";
@@ -212,8 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2DB42041A21E8F4005EC592 /* ViewController.swift in Sources */,
+				E271F78C1A23892D00340729 /* CustomTableViewCell.swift in Sources */,
 				E2DB42021A21E8F4005EC592 /* AppDelegate.swift in Sources */,
+				E271F78A1A22F82E00340729 /* RestaurantTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +409,7 @@
 				E2DB421D1A21E8F4005EC592 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2DB421E1A21E8F4005EC592 /* Build configuration list for PBXNativeTarget "Food PinTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				E2DB42201A21E8F4005EC592 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

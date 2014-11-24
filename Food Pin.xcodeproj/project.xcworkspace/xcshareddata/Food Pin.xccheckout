@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2F109F8F-8F7C-466B-806A-603BBDA934DE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Food Pin</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2BC1C8F6860EB6D880795C89EF3BBED0D467CDC0</key>
+		<string>https://github.com/lijinma/Food-Pin.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Food Pin.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2BC1C8F6860EB6D880795C89EF3BBED0D467CDC0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lijinma/Food-Pin.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2BC1C8F6860EB6D880795C89EF3BBED0D467CDC0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2BC1C8F6860EB6D880795C89EF3BBED0D467CDC0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Food%20Pin</string>
+		</dict>
+	</array>
+</dict>
+</plist>
