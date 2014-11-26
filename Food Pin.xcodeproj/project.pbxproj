@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E271F78A1A22F82E00340729 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E271F7891A22F82E00340729 /* RestaurantTableViewController.swift */; };
 		E271F78C1A23892D00340729 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E271F78B1A23892D00340729 /* CustomTableViewCell.swift */; };
+		E2C352CB1A263AC10003FD17 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C352CA1A263AC10003FD17 /* DetailViewController.swift */; };
 		E2DB42021A21E8F4005EC592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB42011A21E8F4005EC592 /* AppDelegate.swift */; };
 		E2DB42071A21E8F4005EC592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DB42051A21E8F4005EC592 /* Main.storyboard */; };
 		E2DB42091A21E8F4005EC592 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DB42081A21E8F4005EC592 /* Images.xcassets */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		E271F7891A22F82E00340729 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 		E271F78B1A23892D00340729 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		E2C352CA1A263AC10003FD17 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E2DB41FC1A21E8F4005EC592 /* Food Pin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Pin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DB42001A21E8F4005EC592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2DB42011A21E8F4005EC592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				E271F7891A22F82E00340729 /* RestaurantTableViewController.swift */,
 				E271F78B1A23892D00340729 /* CustomTableViewCell.swift */,
 				E2DB41FF1A21E8F4005EC592 /* Supporting Files */,
+				E2C352CA1A263AC10003FD17 /* DetailViewController.swift */,
 			);
 			path = "Food Pin";
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				E271F78C1A23892D00340729 /* CustomTableViewCell.swift in Sources */,
 				E2DB42021A21E8F4005EC592 /* AppDelegate.swift in Sources */,
 				E271F78A1A22F82E00340729 /* RestaurantTableViewController.swift in Sources */,
+				E2C352CB1A263AC10003FD17 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
