@@ -75,12 +75,20 @@ class RestaurantTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain,
+            target: nil, action: nil)
+
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.hidesBarsOnSwipe = true
     }
     
     override func didReceiveMemoryWarning() {
@@ -98,10 +106,11 @@ class RestaurantTableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "showRestaurantDetail" {
-        if let indexPath = self.tableView.indexPathForSelectedRow() {
-        let destinationController = segue.destinationViewController as DetailViewController
-        destinationController.restaurantImage = self.restaurants[indexPath.row].image
-        } }
+            if let indexPath = self.tableView.indexPathForSelectedRow() {
+                let destinationController = segue.destinationViewController as DetailViewController
+                destinationController.restaurant = self.restaurants[indexPath.row]
+            }
+        }
     }
     
 //    override func tableView(tableview: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
