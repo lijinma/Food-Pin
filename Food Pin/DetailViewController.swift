@@ -52,6 +52,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as DetailTableViewCell
         cell.backgroundColor = UIColor.clearColor()
+        cell.mapButton.hidden = true
         // Configure the cell...
         switch indexPath.row {
     case 0:
@@ -62,7 +63,8 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     cell.valueLabel.text = restaurant.type
     case 2:
         cell.fieldLabel.text = "Location"
-    cell.valueLabel.text = restaurant.location
+            cell.valueLabel.text = restaurant.location
+            cell.mapButton.hidden = false
     case 3:
         cell.fieldLabel.text = "Been here"
     cell.valueLabel.text = (restaurant.isVisited) ? "Yes, I’ve been here before" : "No"
@@ -72,6 +74,13 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         }
         return cell }
     
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if segue.identifier == "showMap" {
+        let destinationController = segue.destinationViewController as MapViewController
+        destinationController.restaurant = restaurant
+        }
+    }
     /*
     // MARK: - Navigation
 

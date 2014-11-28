@@ -119,6 +119,17 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeh-5A-FCU">
+                                                    <rect key="frame" x="266" y="7" width="46" height="30"/>
+                                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Map">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="D6u-oS-RJS" kind="push" identifier="showMap" id="YT9-ke-wXL"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="fOG-D5-whc" firstAttribute="top" secondItem="sA6-eR-rJf" secondAttribute="topMargin" id="8PV-HY-iki"/>
@@ -132,6 +143,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="fieldLabel" destination="hcA-m2-Xca" id="qEO-QN-uZC"/>
+                                            <outlet property="mapButton" destination="qeh-5A-FCU" id="CCL-4n-Q2B"/>
                                             <outlet property="valueLabel" destination="fOG-D5-whc" id="yDy-i5-1Bn"/>
                                         </connections>
                                     </tableViewCell>
@@ -320,6 +332,33 @@
                 <exit id="T59-bv-LW8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1498" y="246"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="kk4-8G-0kS">
+            <objects>
+                <viewController title="Map View Controller" id="D6u-oS-RJS" customClass="MapViewController" customModule="Food_Pin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ibK-Fe-8aL"/>
+                        <viewControllerLayoutGuide type="bottom" id="9om-QX-Egg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NEn-1t-Jdr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ht3-v9-aFK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vXU-dY-ESY"/>
+                    <connections>
+                        <outlet property="mapView" destination="ht3-v9-aFK" id="LXn-uR-4hj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7PU-1Z-jim" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1212" y="-415"/>
         </scene>
     </scenes>
     <resources>
