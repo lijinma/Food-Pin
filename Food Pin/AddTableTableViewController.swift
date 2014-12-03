@@ -11,6 +11,24 @@ import UIKit
 class AddTableTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView:UIImageView!
+    @IBOutlet weak var nameTextField:UITextField!
+    @IBOutlet weak var typeTextField:UITextField!
+    @IBOutlet weak var locationTextField:UITextField!
+    @IBOutlet weak var yesButton:UIButton!
+    @IBOutlet weak var noButton:UIButton!
+    
+    let cameraImage = UIImage(named: "camera")
+    
+    @IBAction func saveBarButtonItemCliked() {
+        if imageView.image! == cameraImage
+            || nameTextField.text.isEmpty
+            || typeTextField.text.isEmpty
+            || locationTextField.text.isEmpty{
+
+            println("please complete")
+
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
